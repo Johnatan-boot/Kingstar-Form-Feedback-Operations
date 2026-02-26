@@ -1,72 +1,159 @@
-📋 Sobre o Projeto
+# 🧠 Sistema de Inteligência Operacional Empresarial
 
-O Sistema de Inteligência Operacional Empresarial é uma aplicação web interna desenvolvida para coletar, armazenar e analisar feedbacks estratégicos de colaboradores sobre:
+Plataforma web interna para coleta, armazenamento e análise de feedbacks estratégicos sobre **profissionais, processos, logística e produtos**.
 
-👤 Profissionais
+Este sistema é o embrião de uma solução completa de **Inteligência Operacional e Business Intelligence corporativo**.
 
-⚙️ Processos
+---
 
-📦 Produtos (colchões, cama box, baú e derivados)
+# 📌 Visão Geral
 
-🚚 Logística
+O sistema permite que colaboradores registrem feedback estruturado sobre:
 
-🏢 Operações empresariais
+- Operações do setor
+- Gargalos e falhas
+- Ineficiências logísticas
+- Problemas operacionais
+- Sugestões de melhoria
+- Avaliação de eficiência
 
-O objetivo é transformar feedback operacional em dados estratégicos acionáveis para melhoria contínua e tomada de decisão baseada em evidências.
+Os dados são armazenados e podem ser utilizados posteriormente em ferramentas como:
 
-🎯 Objetivos principais
+- Excel
+- Power BI
+- Dashboards internos
+- Sistemas de análise
 
-Centralizar feedbacks operacionais
+---
 
-Identificar gargalos e falhas
+# 🎯 Objetivo
 
-Mapear ineficiências operacionais
+Transformar conhecimento operacional dos colaboradores em:
 
-Coletar sugestões de melhoria
+- Dados estruturados
+- Indicadores de eficiência
+- Base para tomada de decisão
+- Inteligência estratégica empresarial
 
-Criar base de dados para análise com Power BI
+---
 
-Servir como fundação para sistema de inteligência empresarial
+# 🧩 Funcionalidades
 
-🧩 Funcionalidades atuais
-✅ Coleta de dados via formulário inteligente
+## ✔ Formulário inteligente
 
-Identificação do colaborador
+Coleta informações como:
 
-Departamento e cargo
+- Nome
+- Departamento
+- Cargo
+- Tempo na função
+- Avaliação de processos
+- Problemas identificados
+- Sugestões de melhoria
+- Nota de eficiência
 
-Avaliação de processos
+---
 
-Identificação de problemas
+## ✔ Barra de progresso dinâmica
 
-Sugestões de melhoria
+- Atualização em tempo real
+- Baseada no preenchimento
+- Reset automático após envio
 
-Nota de eficiência operacional
+---
 
-✅ Barra de progresso dinâmica
+## ✔ Sistema de notificações (Toast)
 
-Atualização em tempo real
+- Feedback visual de sucesso
+- Feedback visual de erro
+- Interface profissional
 
-Reset automático após envio
+---
 
-Feedback visual ao usuário
-
-✅ Sistema de notificações Toast
-
-Notificação de sucesso
-
-Notificação de erro
-
-Interface profissional (Bootstrap)
-
-✅ Persistência de dados em JSON
+## ✔ Persistência em JSON
 
 Os dados são armazenados em:
+# 🧠 Sistema de Inteligência Operacional Empresarial
 
+Plataforma web interna para coleta, armazenamento e análise de feedbacks estratégicos sobre **profissionais, processos, logística e produtos**.
+
+Este sistema é o embrião de uma solução completa de **Inteligência Operacional e Business Intelligence corporativo**.
+
+---
+
+# 📌 Visão Geral
+
+O sistema permite que colaboradores registrem feedback estruturado sobre:
+
+- Operações do setor
+- Gargalos e falhas
+- Ineficiências logísticas
+- Problemas operacionais
+- Sugestões de melhoria
+- Avaliação de eficiência
+
+Os dados são armazenados e podem ser utilizados posteriormente em ferramentas como:
+
+- Excel
+- Power BI
+- Dashboards internos
+- Sistemas de análise
+
+---
+
+# 🎯 Objetivo
+
+Transformar conhecimento operacional dos colaboradores em:
+
+- Dados estruturados
+- Indicadores de eficiência
+- Base para tomada de decisão
+- Inteligência estratégica empresarial
+
+---
+
+# 🧩 Funcionalidades
+
+## ✔ Formulário inteligente
+
+Coleta informações como:
+
+- Nome
+- Departamento
+- Cargo
+- Tempo na função
+- Avaliação de processos
+- Problemas identificados
+- Sugestões de melhoria
+- Nota de eficiência
+
+---
+
+## ✔ Barra de progresso dinâmica
+
+- Atualização em tempo real
+- Baseada no preenchimento
+- Reset automático após envio
+
+---
+
+## ✔ Sistema de notificações (Toast)
+
+- Feedback visual de sucesso
+- Feedback visual de erro
+- Interface profissional
+
+---
+
+## ✔ Persistência em JSON
+
+Os dados são armazenados em:
 backend/data/feedback.json
+
 
 Exemplo:
 
+```json
 [
   {
     "id": 1,
@@ -75,19 +162,20 @@ Exemplo:
     "cargo": "Analista",
     "tempoFuncao": "2 anos",
     "processo": "Separação e envio",
-    "problemas": "Atrasos na expedição",
-    "melhorias": "Automatizar controle",
-    "nota": 7,
-    "data": "2026-02-26T14:32:10.000Z"
+    "problemas": "Atrasos",
+    "melhorias": "Automação",
+    "nota": 8,
+    "data": "2026-02-26T14:00:00.000Z"
   }
 ]
-🏗️ Arquitetura do sistema
+🏗 Arquitetura
+
 Frontend
 │
 ├── HTML
 ├── CSS
 ├── JavaScript
-└── Bootstrap UI
+└── Bootstrap
 
 Backend
 │
@@ -95,16 +183,24 @@ Backend
 ├── Express
 └── JSON Storage
 
-Dados
-│
-└── feedback.json
+📁 Estrutura do Projeto
 
-Futuro
+project/
 │
-├── MySQL
-├── Dashboard Analytics
-└── IA preditiva
-⚙️ Tecnologias utilizadas
+├── frontend/
+│   ├── index.html
+│   ├── assets/
+│   └── css/
+│
+├── backend/
+│   ├── server.js
+│   └── data/
+│       └── feedback.json
+│
+├── package.json
+└── README.md
+
+⚙ Tecnologias Utilizadas
 Frontend
 
 HTML5
@@ -119,120 +215,62 @@ Backend
 
 Node.js
 
-Express.js
+Express
 
 Armazenamento
 
-JSON (atual)
+JSON
 
-MySQL (planejado)
-
-Integrações futuras
-
-Power BI
-
-Dashboard administrativo
-
-Análise por IA
-
-📂 Estrutura do projeto
-project/
-│
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   └── assets/
-│
-├── backend/
-│   ├── server.js
-│   └── data/
-│       └── feedback.json
-│
-├── package.json
-└── README.md
-🚀 Como executar o projeto
+🚀 Como Executar
 1. Instalar dependências
 npm install
 2. Iniciar servidor
 node server.js
-
-ou
-
-npm start
-3. Acessar sistema
+3. Acessar no navegador
 http://localhost:3000
-📊 Fluxo de funcionamento
+🔄 Fluxo de funcionamento
+
 Usuário preenche formulário
         ↓
-Frontend envia POST via fetch
+Frontend envia requisição POST
         ↓
-Express recebe requisição
+Backend recebe dados
         ↓
 Dados salvos em feedback.json
         ↓
-Toast confirma sucesso
-        ↓
-Dados disponíveis para análise
-🔒 Segurança (planejado)
+Sistema confirma envio
 
-Autenticação de usuário
+📊 Aplicações futuras
 
-Controle de acesso por perfil
+Dashboard administrativo
 
-Registro de auditoria
+Integração com MySQL
 
-Validação de dados
+Análise com Power BI
 
-📈 Roadmap futuro
-Fase 1 — Concluído
+Geração de relatórios
 
- Formulário funcional
+Sistema de indicadores
 
- Salvamento em JSON
+Inteligência operacional com IA
 
- Toast notifications
+🧠 Finalidade estratégica
 
- Barra de progresso
+Este sistema serve como base para:
 
-Fase 2 — Em desenvolvimento
+Business Intelligence
 
- Dashboard administrativo
-
- Visualização de feedbacks
-
- Filtros por setor
-
-Fase 3 — Planejado
-
- Integração com MySQL
-
- Gráficos e KPIs
-
- Relatórios automáticos
-
-Fase 4 — Inteligência Operacional
-
- Análise automática por IA
-
- Identificação de gargalos
-
- Sugestões automatizadas
-
- Score de eficiência operacional
-
-🎯 Casos de uso
-
-Auditoria operacional
-
-Diagnóstico organizacional
-
-Identificação de gargalos logísticos
+Diagnóstico operacional
 
 Melhoria contínua
 
-Base de dados para BI
+Gestão baseada em dados
 
 👨‍💻 Autor
 
 Johnatan Quenes
-Desenvolvimento de Sistema de Inteligência Operacional Empresarial
+Sistema de Inteligência Operacional Empresarial
+
+🔒 Licença
+
+Uso interno corporativo
